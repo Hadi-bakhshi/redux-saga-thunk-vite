@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.App div{
+  margin-bottom: 2rem;
+}
