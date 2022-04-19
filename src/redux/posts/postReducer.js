@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   loading: false,
-  data: [],
+  data: {},
   error: "",
 };
 
@@ -15,7 +15,7 @@ const postReducer = (state = initialState, action) => {
     case FETCH_POST_REQUEST:
       return { ...state, loading: true };
     case FETCH_POST_FAILURE:
-      return { ...state, loading: false, error: action.payload, data: [] };
+      return { ...state, loading: false, error: action.payload, data: {} };
     case FETCH_POST_SUCCESS:
       return { ...state, loading: false, error: "", data: action.payload };
     default:
